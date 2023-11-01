@@ -1,9 +1,63 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Inter'
+    a
+        text-decoration: none
+
+h1
+    margin: 0
+
+html
+    font-family: 'Inter'
+    scroll-behavior: smooth
+
+img
+    display: block
+    max-width: 100%
+    height: auto
+
+ul
+    margin-block-start: 0
+    margin-block-end: 0
+    margin-inline-start: 0px
+    margin-inline-end: 0px
+    padding-inline-start: 0px
+
 .container
     max-width: 1228px
     margin: 0 auto
     padding: 0 15px
 
-h1
-    font-size: 50px
-    font-family: Inter
-    color: red
+/* Главная страница */
+/* Превый экран */
+
+.main-section
+    background: url('../img/bg/bg-main-slider.jpg')
+    height: auto
+    &__container
+        margin: 60px auto 70px  
+
+.main-slider
+    height: 515px
+    background: #fff
+    border-radius: 4px
+    padding: 70px 50px;
+
+    &__slide
+        display: flex
+        align-items: start
+        flex-direction: column
+        justify-content: center
+        height: 100%
+        position: relative
+
+    &__slide-tile
+        span
+    &__slide-img
+        position: absolute
+        right: 0
+        bottom: 0
+
+.main-slider__img

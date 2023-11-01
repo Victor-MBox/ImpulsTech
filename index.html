@@ -1,17 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>ИмпульсТех</title>
+    <link type="image/x-icon" href="img/favicon.png" rel="icon">
+    <title>Главная - ИмпульсТех</title>
 </head>
+
 <body>
-    <h1>test 100</h1>
+    <header class="header">
+        <div class="header__container">
+
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="img/icons/logo.svg" alt="">
+                </a>
+            </div>
+
+            <div class="header__nav-menu">
+                <ul class="nav-menu">
+                    <li class="nav-menu__catalog">
+                        <a href="#">
+                            <div class="band">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            Каталог
+                        </a>
+                    </li>
+                    <li class="nav-menu__item"><a href="about.html">О компании</a></li>
+                    <li class="nav-menu__item"><a href="#">Статьи</a></li>
+                    <li class="nav-menu__item"><a href="#">Видео</a></li>
+                    <li class="nav-menu__item"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="header__search">
+                <button class="search">
+                    <img src="img/icons/icon-search.svg" alt="">
+                    Поиск по сайту
+                </button>
+            </div>
+
+            <div class="header__buttons">
+                <a class="call-btn" href="tel:+74956633573">
+                    <img src="img/icons/icon-call.svg" alt="">
+                    +7(495) 663-35-73
+                </a>
+
+                <button class="btn">
+                    Заказать звонок
+                </button>
+            </div>
 
 
+        </div>
+    </header>
 
+    <section class="main-section">
+        <div class="main-section__container container">
+            <div class="main-slider" id="mainSlider">
 
+                <div class="main-slider__slide">
+                    <div class="main-slider__slide-tile">Проектируем и реализуем <span>комплексные решения</span> по молниезащите, защите от импульсных перенапряжений
+                    (УЗИП) и электроснабжению</div>
+                    
+                    <button class="main-btn">Подробнее</button>
+                    <div class="main-slider__slide-img"><img src="img/home-page/home-slide-01.png" alt=""></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
 
@@ -23,4 +88,5 @@
     <script src="js/script.js"></script>
 
 </body>
+
 </html>

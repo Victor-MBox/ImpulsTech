@@ -1,0 +1,86 @@
+.header
+    border-bottom: 1px solid #9D9D95
+    background: #FFF
+    &__container
+        height: 90px
+        display: flex
+        align-items: center
+        justify-content: center
+
+        padding: 0 20px
+    &__logo
+        margin-right: 70px
+        a
+            img
+                height: 70px
+                width: 150px
+    &__search
+        margin-right: 15px
+    &__buttons
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        .call-btn
+            margin-right: 30px
+
+.nav-menu
+    display: flex
+    list-style-type: none
+    align-items: center
+
+    margin-right: 70px
+
+    a
+        color: #1D1D1B
+        font-size: 18px
+        font-weight: 600
+        line-height: 110%
+
+        display: flex
+        justify-content: center
+        align-items: center
+
+        transition: .3s
+
+        &:hover
+            color: #E30613
+
+    li
+        margin-right: 30px
+        &:last-child
+            margin-right: 0
+    &__item_active
+        a
+            color: #E30613
+    &__catalog
+        a
+            border-radius: 6px
+            background: #EBEBEB
+
+            padding: 8px 15px 8px 8px
+
+            transition: .3s
+
+            .band
+                display: flex
+                flex-direction: column
+                justify-content: center
+                span
+                    height: 2px
+                    width: 10px
+                    background: #E30613
+                    display: block
+                    margin-right: 5px
+                    transition: .3s
+
+                    &:first-child
+                        margin-bottom: 4px
+        &:hover
+            a
+                color: #fff
+                background: #353531
+                .band
+                    span
+                        background: #fff
+
+    
