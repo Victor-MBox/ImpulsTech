@@ -2,7 +2,6 @@
     margin: 0
     padding: 0
     box-sizing: border-box
-    font-family: 'Inter'
     a
         text-decoration: none
 
@@ -30,20 +29,22 @@ ul
     margin: 0 auto
     padding: 0 15px
 
-/* Главная страница */
-/* Превый экран */
+/* //! Главная страница */
+/* //* Превый экран */
 
 .main-section
-    background: url('../img/bg/bg-main-slider.jpg')
+    background: url('../img/bg/bg-main-slider.jpg') center no-repeat
     height: auto
     &__container
-        margin: 60px auto 70px  
+        padding: 60px 0 70px
+        margin-top: -5px
 
 .main-slider
     height: 515px
     background: #fff
     border-radius: 4px
-    padding: 70px 50px;
+    padding: 70px 50px
+    position: relative
 
     &__slide
         display: flex
@@ -51,13 +52,20 @@ ul
         flex-direction: column
         justify-content: center
         height: 100%
-        position: relative
 
     &__slide-tile
+        width: 56%
+        font-size: 40px
+        font-weight: 600
+        line-height: 44px
+        letter-spacing: -0.8px
+        color: $black-1
+
+        margin-bottom: 50px
         span
+            color: $main-red
+            font-style: italic
     &__slide-img
         position: absolute
         right: 0
         bottom: 0
-
-.main-slider__img
