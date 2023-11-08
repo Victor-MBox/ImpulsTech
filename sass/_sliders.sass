@@ -1,0 +1,35 @@
+/* //! Главная страница */
+/* //* Превый слайд */
+
+.main-slider
+    height: 515px
+    background: #fff
+    border-radius: 4px
+    padding: 70px 50px
+    position: relative
+
+    overflow: hidden
+
+    &__slide
+        display: flex
+        align-items: start
+        flex-direction: column
+        justify-content: center
+        height: 100%
+
+    &__slide-tile
+        width: 56%
+        font-size: 40px
+        font-weight: 600
+        line-height: 44px
+        letter-spacing: -0.8px
+        color: $black-1
+
+        margin-bottom: 50px
+        span
+            color: $main-red
+            font-style: italic
+    &__slide-img
+        position: absolute
+        right: -60px
+        bottom: 0
