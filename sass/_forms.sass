@@ -1,0 +1,86 @@
+.form
+    input, textarea
+        width: 100%
+        padding: 15px
+        margin-bottom: 10px
+        border-radius: 6px
+        background: #FFF
+        border: none
+        resize: none
+        &:focus-visible, &:active
+
+            outline: none
+    &__submit
+        button
+            border: none
+            width: 100%
+            border-radius: 6px
+            background: $main-red
+            display: flex
+            align-items: center
+            justify-content: center
+
+            padding: 12px 10px 12px 20px
+            margin-bottom: 22px
+
+            transition: .3s
+            p
+                color: #fff
+                font-size: 18px
+                font-weight: 600
+                line-height: 19.8px
+
+                margin-right: 15px
+            span
+                border-radius: 100px
+                background: rgba(255, 255, 255, 0.30)
+                padding: 5px 4px 5px 8px
+                width: 30px
+                height: 30px
+                display: flex
+                align-items: center
+                justify-content: space-between
+            &:hover
+                background: $black-1
+
+.checkbox
+    position: relative
+    &__input
+        display: none
+    &__text
+        display: block
+        color: #595959
+        font-size: 15px
+        font-weight: 400
+        line-height: 120%
+        margin-left: 30px
+        a
+            color: #595959
+            text-decoration-line: underline
+
+    &__fake
+        display: inline-block
+        width: 20px
+        height: 20px
+        border: 1px solid $black-1
+        border-radius: 5px
+        position: absolute
+        left: 0
+        top: 0
+        &::before
+            content: ''
+            display: block
+            width: 0px
+            height: 0px
+            background: url(../img/icons/checkbox.svg) no-repeat center
+
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+
+            transition: .1s
+
+.checkbox__input:checked + .checkbox__fake::before
+    width: 20px
+    height: 20px

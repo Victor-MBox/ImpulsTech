@@ -10,6 +10,7 @@ h1
 
 html
     font-family: 'Inter'
+    font-weight: 400
     scroll-behavior: smooth
 
 img
@@ -44,13 +45,11 @@ ul
     height: auto
     &__container
         padding: 60px 0 70px
-        margin-top: -5px
 
 /* //* Второй экран */
 
 .product-sections
-    &__container
-        padding: 100px 0
+    padding: 100px 0
     &__title
         margin-bottom: 50px
 
@@ -72,7 +71,7 @@ ul
         border-radius: 4px
         background: $black-2 url(../img/bg/bg-card-black.jpg)
 
-        width: 32%
+        width: 31.9%
         height: 160px
         padding: 70px 24px
 
@@ -83,8 +82,8 @@ ul
 
         p
             color: $gray-text
-            font-size: 22px
-            font-weight: 600
+            font-size: 20px
+            font-weight: 500
             line-height: 26.4px
             width: 64%
 
@@ -128,7 +127,7 @@ ul
 
         p
             font-size: 22px
-            font-weight: 600
+            font-weight: 500
             line-height: 26.4px
             color: #fff
             transition: .3s
@@ -153,7 +152,6 @@ ul
             margin-top: 25px
 
             border-top: 1px solid #fff
-
 
         &::before
             content: ''
@@ -189,3 +187,145 @@ ul
                     margin-top: -100px
                 span, &::before
                     opacity: 1
+
+/* //* Третий экран */
+
+.about-section
+    background: $gray-bg
+    padding: 100px 0
+    &__title
+        text-align: center
+        margin-bottom: 60px
+    &__content
+        display: flex
+        margin-bottom: 120px
+    &__column
+        &:first-child
+            position: relative
+            width: 57%
+            margin-right: 50px
+
+            &:hover
+                .icon-play
+                    padding: 26px 26px 26px 30px
+
+        &:last-child
+            width: 43%
+            p
+                color: $black-1
+                font-size: 20px
+                font-weight: 400
+                line-height: 30px
+
+                margin-bottom: 14px
+
+.img-video
+    border-radius: 4px
+.icon-play
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 21px 21px 21px 25px
+    border-radius: 100px
+    background: $main-red
+
+    transition: .3s
+    img
+        width: 25px
+        height: 30px
+
+.icon-box
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__column
+        width: 32%
+        height: 160px
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+
+        background: #fff
+
+        border-radius: 4px
+        padding: 0 20px
+    &__icon
+        margin-top: -50px
+        margin-bottom: 10px
+    &__text
+        color: $black-1
+        font-size: 20px
+        font-weight: 500
+        line-height: 26px
+
+/* //* Четвертый экран */
+.news-section
+    padding: 100px 0
+    &__navigation
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    &__btn-tab
+        button
+            margin-right: 10px
+            &:last-child
+                margin-right: 0
+
+.article
+    display: flex
+    justify-content: space-between
+    &__item
+        padding: 50px 0
+        margin-right: 24px
+        &:last-child
+            margin-right: 0
+    &__img
+        height: 204px
+        object-fit: cover
+        margin-bottom: 15px
+    &__title
+        display: block
+        color: $black-1
+        font-size: 16px
+        font-weight: 600
+        line-height: 19.2px
+        margin-bottom: 8px
+    &__text
+        color: $gray-article-text
+        font-size: 15px
+        font-weight: 400
+        line-height: 18.75px
+    &__btn
+        padding-bottom: 10px
+        border-bottom: 1px solid #C8CDD0
+
+/* //* Пятый экран */
+
+.feedback-section
+    padding: 100px 0
+    background: url(../img/bg/bg-feedback-section.jpg) center no-repeat
+
+.feedback
+    display: flex
+    justify-content: space-between
+    &__column
+        width: 50%
+        &:first-child
+            padding-right: 120px
+        &:last-child
+            padding-left: 120px
+    &__title
+        margin-bottom: 40px
+    &__contacts
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        a
+            margin-bottom: 20px
+    &__form
+        border-radius: 4px
+        background: #EBEDEF
+        padding: 30px

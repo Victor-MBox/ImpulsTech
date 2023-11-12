@@ -1,7 +1,6 @@
 button, a
     cursor: pointer
 
-
 .search
     background: none
     border: none
@@ -41,6 +40,7 @@ button, a
     align-items: center
 
     font-size: 16px
+    font-weight: 600
     color: $black-1
 
     transition: .3s
@@ -97,9 +97,74 @@ button, a
         border-radius: 100px
         background: rgba(255, 255, 255, 0.30)
         font-size: 14px
-        line-height: 1 
+        line-height: 1
         padding: 8px
         margin-left: 15px
     &:hover
         background: $black-1
         color: #fff
+
+.text-link
+    color: $black-1
+    font-size: 18px
+    font-weight: 600
+    line-height: 27px
+    transition: .3s
+    span
+        color: $main-red
+    &:hover
+        color: $main-red
+
+.btn-tab
+    padding: 14px 25px
+    border-radius: 100px
+    background: $gray-btn
+    border: none
+    color: $gray-btn-text
+    font-size: 20px
+    font-weight: 600
+    line-height: 110%
+
+    transition: .3s
+    &:hover
+        color: $black-1
+    &_active
+        background: $black-1
+        color: #fff
+        cursor: default
+        &:hover
+            color: #fff
+
+.link-tel, .link-telegram, .link-mail, .link-whatsapp
+    color: $black-1
+    font-size: 18px
+    font-weight: 600
+    line-height: 27px
+
+    display: flex
+    align-items: center
+    &::before
+        content: ''
+        display: block
+        width: 30px
+        height: 30px
+        padding-right: 10px
+    &:hover
+        color: #6C6C65
+
+.link-tel
+    width: 70%
+    &::before
+        background: url(../img/icons/icon-call.svg) center no-repeat
+.link-telegram
+    width: 30%
+    &::before
+        background: url(../img/icons/telegram.svg) center no-repeat
+.link-mail
+    width: 70%
+    &::before
+        background: url(../img/icons/mail.svg) center no-repeat
+.link-whatsapp
+    width: 30%
+    &::before
+        background: url(../img/icons/whatsapp.svg) center no-repeat
