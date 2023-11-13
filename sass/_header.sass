@@ -1,6 +1,6 @@
 .header
     position: relative
-    z-index: 99
+    z-index: 9
     border-bottom: 1px solid #9D9D95
     background: #FFF
     &__container
@@ -153,7 +153,7 @@
     height: 100vh
     width: 100vw
 
-    z-index: 10
+    z-index: 8
 
     &__wrapper
         position: absolute
@@ -180,24 +180,9 @@
         .main-btn
             padding: 10px 15px
             margin-left: -20px
-    &__close
-        border-radius: 100px
-        border: none
-        background: #A5A5A4
-        width: 34px
-        height: 34px
-
-        transition: .3s
-        p
-            font-size: 36px
-            color: #fff
-            margin-left: 3px
-            margin-top: -5px
-            transform: rotate(45deg)
-        &:hover
-            background: $black-1
     &_active
         visibility: inherit
         opacity: 1
         transition: opacity 0.2s linear, visibility 0s linear 0s
-        
+
+

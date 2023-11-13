@@ -56,3 +56,78 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+
+/* //! Модальные окна */
+/* //* Главное окно */
+
+const modalWrapper = document.querySelector('.modal')
+const modalMain = document.querySelector('.modal__main')
+
+const bntMainModal = document.querySelector('[data-modal="mainModal"]')
+const bntCloseMainModal = document.querySelector('[data-modal="closeMainModal"]')
+
+
+
+// Обработчик клика для модального окна
+bntMainModal.addEventListener('click', addActiveClassesModal)
+
+// Функция для добавления классов
+function addActiveClassesModal() {
+    modalWrapper.classList.add('active-modal')
+    modalMain.classList.add('active-modal')
+    document.body.classList.toggle('no-scroll')
+}
+
+// Обработчик для кнопки закрытия
+bntCloseMainModal.addEventListener('click', removeActiveClassesModal)
+
+// Функция для удаления классов
+function removeActiveClassesModal() {
+    modalWrapper.classList.remove('active-modal')
+    modalMain.classList.remove('active-modal')
+    document.body.classList.remove('no-scroll');
+}
+
+// Обработчик для клика по оверлею
+modalWrapper.addEventListener('click', function (event) {
+	if (!event.target.closest('.modal__main')) {
+		removeActiveClassesModal()
+	}
+})
+
+// Обработчик для закрытия по клавише Esc
+document.addEventListener('keydown', function(event) {
+    if (event.keyCode === 27) { // 27 - код клавиши Esc
+        removeActiveClassesModal()
+    }
+});
+
+
+/* //! Слайдер на главной странице */
+
+$(document).ready(function () {
+	let slickSlider = $('#mainSlider')
+
+	if (slickSlider.length) {
+		slickSlider.slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			dots: true,
+			speed: 500,
+			fade: true,
+			autoplay: true,
+			autoplaySpeed: 7000,
+		})
+	}
+
+	/* Навигация слайдера */
+	$('#mainSliderPrev').on('click', function () {
+		slickSlider.slick('slickPrev')
+	})
+
+	$('#mainSliderNext').on('click', function () {
+		slickSlider.slick('slickNext')
+	})
+})

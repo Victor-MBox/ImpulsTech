@@ -4,6 +4,8 @@
     box-sizing: border-box
     a
         text-decoration: none
+    &:focus-visible
+        outline: none
 
 h1
     margin: 0
@@ -44,10 +46,12 @@ ul
 /* //* Превый экран */
 
 .main-section
-    background: url('../img/bg/bg-main-slider.jpg') center no-repeat
+    background: url('../img/bg/bg-main-slider.jpg') center center/cover no-repeat
     height: auto
     &__container
-        padding: 60px 0 70px
+        position: relative
+    .slick-initialized .slick-slide
+        display: flex
 
 /* //* Второй экран */
 

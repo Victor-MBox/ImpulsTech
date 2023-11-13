@@ -1,3 +1,7 @@
+input, textarea
+    &:focus-visible, &:active
+        outline: none
+    
 .form
     input, textarea
         width: 100%
@@ -8,7 +12,6 @@
         border: none
         resize: none
         &:focus-visible, &:active
-
             outline: none
     &__submit
         button
@@ -21,7 +24,7 @@
             justify-content: center
 
             padding: 12px 10px 12px 20px
-            margin-bottom: 22px
+            margin: 10px 0 20px
 
             transition: .3s
             p
@@ -43,7 +46,7 @@
             &:hover
                 background: $black-1
 
-.checkbox
+.checkbox, .checkbox2
     position: relative
     &__input
         display: none
@@ -82,5 +85,9 @@
             transition: .1s
 
 .checkbox__input:checked + .checkbox__fake::before
+    width: 20px
+    height: 20px
+
+.checkbox2__input:checked + .checkbox2__fake::before
     width: 20px
     height: 20px

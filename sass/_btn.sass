@@ -171,3 +171,33 @@ button, a
     &::before
         background: url(../img/icons/whatsapp.svg) center no-repeat
 
+.close-btn
+    border-radius: 100px
+    border: none
+    background: #A5A5A4
+    width: 34px
+    height: 34px
+
+    transition: .3s
+
+    position: relative
+    span
+        display: block
+        background: #fff
+        width: 20px
+        height: 3px
+        border-radius: 8px
+        position: absolute
+        left: 20%
+        top: 48%
+
+        &:first-child
+            transform: rotate(45deg) 
+
+        &:last-child
+            transform: rotate(-45deg) 
+
+    &:hover
+        background: $black-1
+    &_abs
+        position: absolute
