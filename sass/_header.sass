@@ -1,4 +1,6 @@
 .header
+    position: relative
+    z-index: 99
     border-bottom: 1px solid #9D9D95
     background: #FFF
     &__container
@@ -30,20 +32,17 @@
 
     margin-right: 70px
 
-    a
-        color: $black-1
-        font-size: 18px
-        font-weight: 600
-        line-height: 110%
+    li
+        button, a
+            color: $black-1
+            font-size: 18px
+            font-weight: 600
+            line-height: 110%
 
-        display: flex
-        justify-content: center
-        align-items: center
+            transition: .3s
 
-        transition: .3s
-
-        &:hover
-            color: $main-red
+            &:hover
+                color: $main-red
 
     li
         margin-right: 30px
@@ -53,10 +52,12 @@
         a
             color: $main-red
     &__catalog
-        position: relative
-        a
+        .catalog
             border-radius: 6px
             background: #EBEBEB
+            border: none
+            display: flex
+            align-items: center
 
             padding: 8px 15px 8px 8px
 
@@ -76,25 +77,127 @@
 
                     &:first-child
                         margin-bottom: 4px
-        &:hover
-            a
+            &:hover
                 color: #fff
                 background: #353531
                 .band
                     span
                         background: #fff
-    
+            &_active
+                color: #fff
+                background: #353531
+                .band
+                    span
+                        background: #fff
 
+/* Мега меню */
 .mega-menu
-    &__fake
+    visibility: hidden
+    width: 100vw
+    background: #fff
+    position: absolute
+    left: 0
+    top: 92px
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.15)
+    z-index: 9
+
+    opacity: 0
+    transition: opacity 0.2s linear, visibility 0s linear 0.2s
+
+    &__container
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        max-width: 1228px
+        margin: 0 auto
+        padding: 0 15px
+
+        padding: 40px 0
+    &__column
+        width: 33%
+        padding: 0 20px
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        align-items: start
+
+        margin-bottom: 40px
+        img, a
+            margin-bottom: 10px
+    &__title
+        color: $black-1
+        font-size: 16px
+        font-weight: 500
+    &__link
+        color: #666
+        font-size: 15px
+        font-weight: 500
+        line-height: normal
+    &_active
+        visibility: inherit
+        opacity: 1
+        transition: opacity 0.2s linear, visibility 0s linear 0s
+
+/* Поиск */
+.search-window
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s linear, visibility 0s linear 0.2s
+
+    position: fixed
+    left: 0
+    bottom: 0
+
+    background: #5655557a
+
+    height: 100vh
+    width: 100vw
+
+    z-index: 10
+
+    &__wrapper
         position: absolute
         left: 0
-        top: 34px
-        background: #685555
-        width: 110px
-        height: 30px
-    &__catalog
-        padding: 100px 20px
-        width: 100%
-        background: #d76b6b
+        top: 92px
+        padding: 10px 0
+        background: #E6E6E5
+        width: 100vw
+        display: flex
+        justify-content: center
+        align-items: center
         z-index: 9
+    form
+        display: flex
+        margin-right: 30px
+        input
+            width: 1100px
+            height: 40px
+            border-radius: 6px
+            background: #FFF
+            border: none
+            padding: 0 15px
+            margin-right:
+        .main-btn
+            padding: 10px 15px
+            margin-left: -20px
+    &__close
+        border-radius: 100px
+        border: none
+        background: #A5A5A4
+        width: 34px
+        height: 34px
+
+        transition: .3s
+        p
+            font-size: 36px
+            color: #fff
+            margin-left: 3px
+            margin-top: -5px
+            transform: rotate(45deg)
+        &:hover
+            background: $black-1
+    &_active
+        visibility: inherit
+        opacity: 1
+        transition: opacity 0.2s linear, visibility 0s linear 0s
+        

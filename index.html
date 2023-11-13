@@ -23,19 +23,78 @@
                 <ul class="nav-menu">
 
                     <li class="nav-menu__catalog">
-                        <a href="#">
+                        <button class="catalog" id="catalog">
                             <div class="band">
                                 <span></span>
                                 <span></span>
                             </div>
                             Каталог
-                        </a>
-
-                        
+                        </button>
                     </li>
 
-                    
-                    
+                    <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu__container">
+                            <div class="mega-menu__column">
+                                <img src="img/menu/menu-1.png" alt="">
+                                <a class="mega-menu__title" href="#">Токоотводы и аксессуары</a>
+                                <a class="mega-menu__link" href="#">Круглый проводник</a>
+                                <a class="mega-menu__link" href="#">Плоский проводник</a>
+                                <a class="mega-menu__link" href="#">Держатели токоотводов</a>
+                                <a class="mega-menu__link" href="#">Соединители токоотводов</a>
+                            </div>
+
+                            <div class="mega-menu__column">
+                                <img src="img/menu/menu-2.png" alt="">
+                                <a class="mega-menu__title" href="#">Молниеприёмники и молниеприёмные мачты</a>
+                                <a class="mega-menu__link" href="#">Стержневые молниеприемники</a>
+                                <a class="mega-menu__link" href="#">Молниеприемники на бетонных основаниях</a>
+                                <a class="mega-menu__link" href="#">Элементы крепления молниеприемников</a>
+                            </div>
+
+                            <div class="mega-menu__column">
+                                <img src="img/menu/menu-3.png" alt="">
+                                <a class="mega-menu__title" href="#">Заземление</a>
+                                <a class="mega-menu__link" href="#">Составные электроды</a>
+                                <a class="mega-menu__link" href="#">Соединители и наконечники для электродов</a>
+                                <a class="mega-menu__link" href="#">Инструмент и аксессуары</a>
+                            </div>
+
+                            <div class="mega-menu__column">
+                                <img src="img/menu/menu-4.png" alt="">
+                                <a class="mega-menu__title" href="#">Устройства защиты от импульсных перенапряжений
+                                    (УЗИП), НПЦ «Грозозащита»</a>
+                                <a class="mega-menu__link" href="#">1 класс защиты (по питанию)</a>
+                                <a class="mega-menu__link" href="#">2 класс защиты (по питанию)</a>
+                                <a class="mega-menu__link" href="#">3 класс защиты (по питанию)</a>
+                                <a class="mega-menu__link" href="#">Телекоммуникационные УЗИП</a>
+                                <a class="mega-menu__link" href="#">УЗИП специального назначения</a>
+                                <a class="mega-menu__link" href="#">Приборы для тестирования</a>
+
+                            </div>
+
+                            <div class="mega-menu__column">
+                                <img src="img/menu/menu-5.png" alt="">
+                                <a class="mega-menu__title" href="#">Устройства защиты от импульсных перенапряжений
+                                    (УЗИП), DEHN</a>
+                                <a class="mega-menu__link" href="#">1 класс защиты (по питанию)</a>
+                                <a class="mega-menu__link" href="#">2 класс защиты (по питанию)</a>
+                                <a class="mega-menu__link" href="#">3 класс защиты (по питанию)</a>
+                                <a class="mega-menu__link" href="#">УЗИП для слаботочных систем</a>
+                                <a class="mega-menu__link" href="#">Комбинированные УЗИП</a>
+
+                            </div>
+
+                            <div class="mega-menu__column">
+                                <img src="img/menu/menu-6.png" alt="">
+                                <a class="mega-menu__title" href="#">Изолированная молниезащита</a>
+                                <a class="mega-menu__link" href="#">Опорные трубостойки с молниеприемником</a>
+                                <a class="mega-menu__link" href="#">Держатели токоотводов</a>
+                                <a class="mega-menu__link" href="#">Треноги и штативы</a>
+                                <a class="mega-menu__link" href="#">Треноги и штативы</a>
+                            </div>
+                        </div>
+                    </div>
+
                     <li class="nav-menu__item"><a href="about.html">О компании</a></li>
                     <li class="nav-menu__item"><a href="#">Статьи</a></li>
                     <li class="nav-menu__item"><a href="#">Видео</a></li>
@@ -44,7 +103,7 @@
             </div>
 
             <div class="header__search">
-                <button class="search">
+                <button class="search" id="searchBtn">
                     <img src="img/icons/icon-search.svg" alt="">
                     Поиск по сайту
                 </button>
@@ -63,6 +122,18 @@
 
         </div>
     </header>
+
+    <div class="search-window" id="searchWindow">
+        <div class="search-window__wrapper">
+            <form action="#" method="GET">
+                <input type="text" name="query" placeholder="Что ищем" />
+                <button class="main-btn" type="submit">Найти</button>
+            </form>
+            <button class="search-window__close">
+                <p>+</p>
+            </button>
+        </div>
+    </div>
 
     <section class="main-section">
         <div class="main-section__container container">
@@ -314,43 +385,43 @@
     </section>
 
     <footer class="footer">
-            <div class="footer__navigation container">
-                <div class="footer__column">
-                    <a href="#"><img src="img/icons/logo-gray.svg" alt=""></a>
-                    <a class="footer__link-contact" href="tel:+7(495) 663-35-73">+7(495) 663-35-73</a>
-                    <a class="footer__link-contact" href="#">Telegram</a>
-                    <a class="footer__link-contact" href="#">WhatsApp</a>
-                    <a class="footer__link-contact" href="mailto:info@molnia.guru">info@molnia.guru</a>
-                    <p>г. Москва, БЦ «Хамелеон», Рязанский проспект, д.10, стр.18, оф. 2.13</p>
+        <div class="footer__navigation container">
+            <div class="footer__column">
+                <a href="#"><img src="img/icons/logo-gray.svg" alt=""></a>
+                <a class="footer__link-contact" href="tel:+7(495) 663-35-73">+7(495) 663-35-73</a>
+                <a class="footer__link-contact" href="#">Telegram</a>
+                <a class="footer__link-contact" href="#">WhatsApp</a>
+                <a class="footer__link-contact" href="mailto:info@molnia.guru">info@molnia.guru</a>
+                <p>г. Москва, БЦ «Хамелеон», Рязанский проспект, д.10, стр.18, оф. 2.13</p>
 
-                </div>
-
-                <div class="footer__column">
-                    <a class="footer__nav-link" href="#">Каталог →</a>
-                    <a class="footer__link" href="#">Токоотводы и аксессуары</a>
-                    <a class="footer__link" href="#">Молниеприёмники и молниеприёмные мачты</a>
-                    <a class="footer__link" href="#">Заземление</a>
-                    <a class="footer__link" href="#">Устройства защиты от импульсных перенапряжений (УЗИП), НПЦ
-                        «Грозозащита»</a>
-                    <a class="footer__link" href="#">Устройства защиты от импульсных перенапряжений (УЗИП), DEHN</a>
-                    <a class="footer__link" href="#">Изолированная молниезащита</a>
-                </div>
-
-                <div class="footer__column">
-                    <a class="footer__nav-link" href="#">Наша Деятельность →</a>
-                    <a class="footer__link" href="#">Проектирование</a>
-                    <a class="footer__link" href="#">Поставка оборудования и материалов</a>
-                </div>
-
-                <div class="footer__column">
-                    <a class="footer__nav-link" href="#">Сайт</a>
-                    <a class="footer__link" href="#">О компании</a>
-                    <a class="footer__link" href="#">Выполненные проекты</a>
-                    <a class="footer__link" href="#">Статьи</a>
-                    <a class="footer__link" href="#">Видео</a>
-                    <a class="footer__link" href="#">Контакты</a>
-                </div>
             </div>
+
+            <div class="footer__column">
+                <a class="footer__nav-link" href="#">Каталог →</a>
+                <a class="footer__link" href="#">Токоотводы и аксессуары</a>
+                <a class="footer__link" href="#">Молниеприёмники и молниеприёмные мачты</a>
+                <a class="footer__link" href="#">Заземление</a>
+                <a class="footer__link" href="#">Устройства защиты от импульсных перенапряжений (УЗИП), НПЦ
+                    «Грозозащита»</a>
+                <a class="footer__link" href="#">Устройства защиты от импульсных перенапряжений (УЗИП), DEHN</a>
+                <a class="footer__link" href="#">Изолированная молниезащита</a>
+            </div>
+
+            <div class="footer__column">
+                <a class="footer__nav-link" href="#">Наша Деятельность →</a>
+                <a class="footer__link" href="#">Проектирование</a>
+                <a class="footer__link" href="#">Поставка оборудования и материалов</a>
+            </div>
+
+            <div class="footer__column">
+                <a class="footer__nav-link" href="#">Сайт</a>
+                <a class="footer__link" href="#">О компании</a>
+                <a class="footer__link" href="#">Выполненные проекты</a>
+                <a class="footer__link" href="#">Статьи</a>
+                <a class="footer__link" href="#">Видео</a>
+                <a class="footer__link" href="#">Контакты</a>
+            </div>
+        </div>
 
         <hr>
 
