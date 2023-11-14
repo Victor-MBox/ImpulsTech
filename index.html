@@ -136,6 +136,7 @@
         </div>
     </div>
 
+    <!-- Главный экран -->
     <section class="main-section">
         <div class="main-section__container container">
 
@@ -164,10 +165,10 @@
                 <div class="main-slider__slide">
                     <div class="main-slider__slide-tile">Молниезащита жилых домов
                     </div>
-                
+
                     <button class="main-btn">Подробнее <span>→</span></button>
                     <div class="main-slider__slide-img"><img src="img/home-page/home-slide-03.png" alt=""></div>
-                
+
                 </div>
 
             </div>
@@ -180,6 +181,7 @@
 
     </section>
 
+    <!-- Разделы продукции -->
     <section class="product-sections">
         <div class="product-sections__container container">
             <div class="product-sections__title title">
@@ -241,6 +243,7 @@
         </div>
     </section>
 
+    <!-- О компании -->
     <section class="about-section">
         <div class="about-section__container container">
             <div class="about-section__title title">
@@ -291,6 +294,7 @@
 
     </section>
 
+    <!-- Публикации -->
     <section class="news-section">
         <div class="news-section__container container">
             <div class="news-section__navigation">
@@ -299,42 +303,81 @@
                 </div>
 
                 <div class="news-section__btn-tab">
-                    <button class="btn-tab btn-tab_active">Статьи</button>
-                    <button class="btn-tab">Видео с семинаров</button>
+                    <button class="btn-tab btn-tab_active" onclick="openTab(event, 'Tab1')">Статьи</button>
+                    <button class="btn-tab" onclick="openTab(event, 'Tab2')">Видео с семинаров</button>
                 </div>
             </div>
 
-            <div class="news-section__article article">
+            <div class="news-section__article article" id="Tab1">
 
-                <div class="article__item">
+                <a class="article__item" href="#">
                     <img class="article__img" src="img/home-page/news/news-01.jpg" alt="">
-                    <a class="article__title" href="#">Грозозащита Ethernet для IP-
-                        видеонаблюдения</a>
+                    <p class="article__title">Грозозащита Ethernet для IP-
+                        видеонаблюдения</p>
                     <div class="article__text">Система IP-видеонаблюдения - это совокупность сложных высокотехнологичных
                         устройств с чувствительной электроникой. Эти...</div>
-                </div>
+                </a>
 
-                <div class="article__item">
+                <a class="article__item" href="#">
                     <img class="article__img" src="img/home-page/news/news-02.jpg" alt="">
-                    <a class="article__title" href="#">Выбор УЗИП. Оценка токов молнии</a>
+                    <p class="article__title">Выбор УЗИП. Оценка токов молнии</p>
                     <div class="article__text">Специалисту по молниезащите трудно представить, как
                         можно рассчитать грозовые перенапряжения и выбрать...</div>
-                </div>
+                </a>
 
-                <div class="article__item">
+                <a class="article__item" href="#">
                     <img class="article__img" src="img/home-page/news/news-03.jpg" alt="">
-                    <a class="article__title" href="#">Заземление молниеотводов</a>
+                    <p class="article__title">Заземление молниеотводов</p>
                     <div class="article__text">Количество статей о заземлении молниеотводов трудно под-
                         считать. Заземляющее устройство – необходимый элемент...</div>
-                </div>
+                </a>
 
-                <div class="article__item">
+                <a class="article__item" href="#">
                     <img class="article__img" src="img/home-page/news/news-04.jpg" alt="">
-                    <a class="article__title" href="#">Активные молниеотводы –
-                        реальная помеха молниезащите</a>
+                    <p class="article__title">Активные молниеотводы –
+                        реальная помеха молниезащите</p>
                     <div class="article__text">В России, как и в других технически развитых странах, есть
                         немало известных специалистов в области атмосферного...</div>
-                </div>
+                </a>
+
+            </div>
+
+            <div class="news-section__article article" id="Tab2">
+
+                <a class="article__item-video" href="#">
+                    <div class="article__img-wrapper">
+                        <img class="article__img" src="img/home-page/news/video-01.jpg" alt="">
+                        <div class="icon-play">
+                            <img src="img/icons/play-video-black.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="article__text">Процесс установки изделия на объекте</div>
+                </a>
+
+                <a class="article__item-video" href="#">
+                    <div class="article__img-wrapper">
+                        <img class="article__img" src="img/home-page/news/video-02.jpg" alt="">
+                        <div class="icon-play">
+                            <img src="img/icons/play-video-black.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="article__text">Процесс установки изделия на объекте</div>
+                </a>
+
+                <a class="article__item-video" href="#">
+                    <div class="article__img-wrapper">
+                        <img class="article__img" src="img/home-page/news/video-03.jpg" alt="">
+                        <div class="icon-play">
+                            <img src="img/icons/play-video-black.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="article__text">Процесс установки изделия на объекте</div>
+                </a>
+
+
 
             </div>
 
@@ -346,6 +389,7 @@
 
     </section>
 
+    <!-- Обратная связь -->
     <section class="feedback-section">
         <div class="feedback-section__container container">
             <div class="feedback-section__feedback feedback">

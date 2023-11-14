@@ -282,14 +282,39 @@ ul
                 margin-right: 0
 
 .article
-    display: flex
+    display: none
     justify-content: space-between
+    padding: 50px 0
+
     &__item
-        padding: 50px 0
+        display: inline-block
+        margin-right: 24px
+        
+        &:last-child
+            margin-right: 0
+        &:hover
+            .article__title
+                color: $main-red
+
+    &__item-video
         margin-right: 24px
         &:last-child
             margin-right: 0
+        .article__img
+            border-radius: 4px
+            height: 234px
+            object-fit: cover
+            margin-bottom: 15px
+        .icon-play
+            background: rgba(255, 255, 255, 0.80)
+        &:hover
+            .icon-play
+                padding: 26px 26px 26px 30px
+    &__img-wrapper
+        position: relative
+
     &__img
+        border-radius: 4px
         height: 204px
         object-fit: cover
         margin-bottom: 15px
@@ -300,6 +325,8 @@ ul
         font-weight: 600
         line-height: 19.2px
         margin-bottom: 8px
+
+        transition: .3s
     &__text
         color: $gray-article-text
         font-size: 15px
