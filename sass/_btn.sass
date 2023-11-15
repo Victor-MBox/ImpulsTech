@@ -153,23 +153,37 @@ button, a
         padding-right: 10px
     &:hover
         color: #6C6C65
+    &_mob
+        &::before
+            padding-right: 0px
 
 .link-tel
     width: 70%
     &::before
-        background: url(../img/icons/icon-call.svg) center no-repeat
+        background: url(../img/icons/icon-call.svg) center center / contain no-repeat
+    &_mob
+        width: auto
+
 .link-telegram
     width: 30%
     &::before
-        background: url(../img/icons/telegram.svg) center no-repeat
+        background: url(../img/icons/telegram.svg) center center / contain no-repeat
+    &_mob
+        width: auto
+        &::before
+            background: url(../img/icons/telegram-black.svg) center center / contain no-repeat
 .link-mail
     width: 70%
     &::before
-        background: url(../img/icons/mail.svg) center no-repeat
+        background: url(../img/icons/mail.svg) center center / contain no-repeat
 .link-whatsapp
     width: 30%
     &::before
-        background: url(../img/icons/whatsapp.svg) center no-repeat
+        background: url(../img/icons/whatsapp.svg) center center / contain no-repeat
+    &_mob
+        width: auto
+        &::before
+            background: url(../img/icons/whatsapp-black.svg) center center / contain no-repeat
 
 .close-btn
     border-radius: 100px
@@ -192,12 +206,33 @@ button, a
         top: 48%
 
         &:first-child
-            transform: rotate(45deg) 
+            transform: rotate(45deg)
 
         &:last-child
-            transform: rotate(-45deg) 
+            transform: rotate(-45deg)
 
     &:hover
         background: $black-1
     &_abs
         position: absolute
+
+.burger
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    background: none
+    border: none
+
+    width: 30px
+    height: 30px
+    span
+        display: block
+        width: 26px
+        height: 2px
+        background: $main-red
+        margin-bottom: 8px
+        border-radius: 8px
+        &:last-child
+            margin-bottom: 0

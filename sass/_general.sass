@@ -32,6 +32,12 @@ ul
     margin: 0 auto
     padding: 0 15px
 
+.page
+    overflow: hidden
+
+.mob-v
+    display: none
+
 .title
     color: $black-1
     font-size: 40px
@@ -76,7 +82,7 @@ ul
         position: relative
 
         border-radius: 4px
-        background: $black-2 url(../img/bg/bg-card-black.jpg)
+        background: $black-2 url(../img/bg/bg-card-black.jpg) center center/cover no-repeat
 
         width: 31.9%
         height: 160px
@@ -98,7 +104,7 @@ ul
             margin-right: 0
 
         &:hover
-            background: $black-2 url(../img/bg/bg-card-red.jpg)
+            background: $black-2 url(../img/bg/bg-card-red.jpg) center center/cover no-repeat
 
             .products__img
                 width: 36%
@@ -174,22 +180,20 @@ ul
             transition: .2s
 
         &:first-child
-            background: url(../img/bg/bg-servise-01.jpg) center
-            background-size: 110%
-
+            background: url(../img/bg/bg-servise-01.jpg) center center/ 120% no-repeat
+            
             &:hover
-                background-size: 120%
+                background-size: 140%
                 p
                     margin-top: -100px
                 span, &::before
                     opacity: 1
 
         &:last-child
-            background: url(../img/bg/bg-servise-02.jpg) center
-            background-size: 110%
+            background: url(../img/bg/bg-servise-02.jpg) center center/ 120% no-repeat
 
             &:hover
-                background-size: 120%
+                background-size: 140%
                 p
                     margin-top: -100px
                 span, &::before
@@ -287,6 +291,7 @@ ul
     padding: 50px 0
 
     &__item
+        width: 25%
         display: inline-block
         margin-right: 24px
         
@@ -297,6 +302,7 @@ ul
                 color: $main-red
 
     &__item-video
+        width: 33.3%
         margin-right: 24px
         &:last-child
             margin-right: 0
@@ -340,7 +346,7 @@ ul
 
 .feedback-section
     padding: 100px 0
-    background: url(../img/bg/bg-feedback-section.jpg) center no-repeat
+    background: url(../img/bg/bg-feedback-section.jpg) center center/cover no-repeat
 
 .feedback
     display: flex
