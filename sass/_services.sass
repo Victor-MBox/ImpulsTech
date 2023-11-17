@@ -5,10 +5,9 @@
         &__column
             background: #F6F7F8
 
-
 /* Первая секция */
 .page-preview
-    padding: 70px 0 100px 
+    padding: 70px 0 100px
     background: url(../img/bg/bg-main-slider.jpg) center center / cover no-repeat
     &__container
     &__title
@@ -18,8 +17,98 @@
 .advantages
     padding: 100px 0 100px
     &__title
-        margin-bottom: 100px 
+        margin-bottom: 100px
 
 /* Третья секция */
-    
+.examples
+    &__title
+        margin-bottom: 50px
 
+.examples-cart
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+        position: relative
+        width: 31.9%
+        margin-right: 24px
+        margin-bottom: 50px
+        &:nth-child(3n)
+            margin-right: 0
+    &__slider
+        margin-bottom: 20px
+
+    .slick-arrow
+        font-size: 0
+        width: 30px
+        height: 30px
+        border: none
+        border-radius: 100px
+        background: rgba(29, 29, 27, 0.50)
+
+    .slick-prev
+        position: absolute
+        left: 4px
+        top: 140px
+        transform: translateY(-50%)
+        z-index: 2
+        &::before
+            content: ''
+            display: block
+            width: 8px
+            height: 14px
+            background: url(../img/icons/left-arrow-slider.svg) center center / cover no-repeat
+
+            position: absolute
+            left: 48%
+            top: 50%
+
+            transform: translate(-50%, -50%)
+
+    .slick-next
+        position: absolute
+        right: 4px
+        top: 140px
+        transform: translateY(-50%)
+        z-index: 2
+        &::before
+            content: ''
+            display: block
+            width: 8px
+            height: 14px
+            background: url(../img/icons/left-arrow-slider.svg) center center / cover no-repeat
+
+            position: absolute
+            left: 52%
+            top: 50%
+
+            transform: translate(-50%, -50%) rotate(180deg)
+
+    .slick-dots
+        display: flex
+        justify-content: center
+
+        position: absolute
+        bottom: 10px
+        left: 50%
+        transform: translateX(-50%)
+
+        li
+            margin-right: 8px
+            &:last-child
+                margin-right: 0
+
+            button
+                font-size: 0
+                width: 10px
+                height: 10px
+                background: #B3B3B3
+                border: 1px solid rgba(255, 255, 255, 0.80)
+                border-radius: 100px
+
+                transition: .3s
+
+        .slick-active
+            button
+                background: $black-1
+            
