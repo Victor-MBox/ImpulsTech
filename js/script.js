@@ -1,3 +1,12 @@
+function safeExecute(selector, callback) {
+    var elements = document.querySelectorAll(selector);
+    if (elements.length > 0) {
+        callback(elements);
+    }
+}
+
+
+
 // * Мега меню
 // Обработчик клика для каталога
 document.getElementById('catalog').addEventListener('click', function (event) {
