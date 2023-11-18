@@ -70,6 +70,16 @@
         &:last-child
             padding-left: 80px
 
+    /* Стрница НАША ДЕЯТЕЛЬНОСТЬ */
+
+    .examples-cart
+        &__item
+            width: 31%
+
+    .text-column
+        &__title
+            font-size: 30px
+
 @media (max-width: 1024px)
     .mob-v
         display: block
@@ -301,6 +311,33 @@
         flex-direction: column-reverse
         p, a
             margin-bottom: 10px
+
+    /* Стрница НАША ДЕЯТЕЛЬНОСТЬ */
+
+    .examples-cart
+        &__item
+            width: 100%
+        &__slider
+            img
+                width: auto
+
+        .slick-next, .slick-prev
+            top: 176px
+
+    .text-column
+        flex-wrap: wrap
+        &__title
+            width: 100%
+            margin-bottom: 40px
+            margin-right: 0
+            font-size: 22px
+        &__text
+            width: 100%
+            font-size: 16px
+
+    .services-page
+        &__about-section
+            padding: 40px 0
 
 @media (max-width: 480px)
     .header__buttons a, .header__buttons .header__btn-search

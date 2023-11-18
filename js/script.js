@@ -69,43 +69,48 @@ function removeActiveClasses() {
 }
 
 /* //! Модальные окна */
+// Объявляем переменные в глобальной области видимости, чтобы они были доступны в других функциях
+var modalWrapper = document.querySelector('.modal');
+var modalMain = document.querySelector('.modal__main');
+var bntCloseMainModal = document.querySelector('[data-modal="closeMainModal"]');
+
 safeExecute('[data-modal="mainModal"]', function (elements) {
-	var bntMainModal = elements[0]
-	var modalWrapper = document.querySelector('.modal')
-	var modalMain = document.querySelector('.modal__main')
-	var bntCloseMainModal = document.querySelector(
-		'[data-modal="closeMainModal"]'
-	)
+    var bntMainModal = elements[0];
 
-	if (modalWrapper && modalMain && bntCloseMainModal) {
-		bntMainModal.addEventListener('click', addActiveClassesModal)
-		bntCloseMainModal.addEventListener('click', removeActiveClassesModal)
+    if (modalWrapper && modalMain && bntCloseMainModal) {
+        bntMainModal.addEventListener('click', addActiveClassesModal);
+        bntCloseMainModal.addEventListener('click', removeActiveClassesModal);
 
-		modalWrapper.addEventListener('click', function (event) {
-			if (!event.target.closest('.modal__main')) {
-				removeActiveClassesModal()
-			}
-		})
+        modalWrapper.addEventListener('click', function (event) {
+            if (!event.target.closest('.modal__main')) {
+                removeActiveClassesModal();
+            }
+        });
 
-		document.addEventListener('keydown', function (event) {
-			if (event.keyCode === 27) {
-				// 27 - код клавиши Esc
-				removeActiveClassesModal()
-			}
-		})
-	}
-})
+        document.addEventListener('keydown', function (event) {
+            if (event.keyCode === 27) {
+                // 27 - код клавиши Esc
+                removeActiveClassesModal();
+            }
+        });
+    }
+});
 
+// Добавляем модификации в функции addActiveClassesModal и removeActiveClassesModal
 function addActiveClassesModal() {
-	modalWrapper.classList.add('active-modal')
-	modalMain.classList.add('active-modal')
-	document.body.classList.toggle('no-scroll')
+    if (modalWrapper && modalMain) {
+        modalWrapper.classList.add('active-modal');
+        modalMain.classList.add('active-modal');
+        document.body.classList.toggle('no-scroll');
+    }
 }
 
 function removeActiveClassesModal() {
-	modalWrapper.classList.remove('active-modal')
-	modalMain.classList.remove('active-modal')
-	document.body.classList.remove('no-scroll')
+    if (modalWrapper && modalMain) {
+        modalWrapper.classList.remove('active-modal');
+        modalMain.classList.remove('active-modal');
+        document.body.classList.remove('no-scroll');
+    }
 }
 
 /* //! Слайдер на главной странице */
