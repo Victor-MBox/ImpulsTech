@@ -189,3 +189,52 @@
         position: absolute
         right: 0px
         bottom: 0
+
+.sections-serv
+    padding: 100px 0 0
+    &__title
+        margin-bottom: 50px
+    .activity
+        margin-bottom: 100px
+        &__item
+            margin-right: 24px
+            &:first-child
+                background: url(../img/services/services-img-01.jpg) center center/ cover no-repeat
+
+            &:nth-child(2)
+                background: url(../img/services/services-img-02.jpg) center center/ cover no-repeat
+
+            &:last-child
+                background: url(../img/services/services-img-03.jpg) center center/ cover no-repeat
+                margin-right: 0
+
+.objects-icon-box
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        width: 25%
+        height: 200px
+
+        padding: 20px 15px 30px 15px
+        border-radius: 4px
+        border: 1px solid #E6E6E5
+
+        margin-right: 24px
+        &:last-child
+            margin-right: 0
+        img
+            width: 80px
+            height: 80px
+            margin-bottom: 20px
+        p
+            text-align: center
+            color: $black-1
+            font-size: 20px
+            font-weight: 500
+            line-height: 130%
