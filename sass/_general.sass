@@ -142,6 +142,19 @@ ul, ol
         border-radius: 4px
         transition: all .3s
 
+        overflow: hidden
+
+        img
+            position: absolute
+            left: 0
+            top: 0
+            z-index: 0
+
+            width: 110%
+            height: 110%
+            object-fit: cover
+
+            transition: .3s
         p
             font-size: 22px
             font-weight: 500
@@ -149,7 +162,7 @@ ul, ol
             color: #fff
             transition: .3s
             position: relative
-            z-index: 1
+            z-index: 2
 
         span
             position: absolute
@@ -170,6 +183,8 @@ ul, ol
 
             border-top: 1px solid #fff
 
+            z-index: 2
+
         &::before
             content: ''
             opacity: 0
@@ -180,22 +195,18 @@ ul, ol
             top: 0
             background: linear-gradient(0deg, rgba(227, 6, 19, 0.80) 0%, rgba(227, 6, 19, 0.80) 100%)
             border-radius: 4px
-            z-index: 0
+            z-index: 1
             transition: .2s
             
         &:hover
-                background-size: 140%
                 p
                     margin-top: -100px
                 span, &::before
                     opacity: 1
+                img
+                    top: -20px
 
-        &:first-child
-            background: url(../img/bg/bg-servise-01.jpg) center center/ 120% no-repeat
-
-        &:last-child
-            background: url(../img/bg/bg-servise-02.jpg) center center/ 120% no-repeat
-
+        
             
 
 

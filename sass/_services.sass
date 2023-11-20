@@ -182,13 +182,16 @@
         color: $black-1
 
         margin-bottom: 50px
+        position: relative
+        z-index: 2
         span
             color: $main-red
             font-style: italic
     &__slide-img
         position: absolute
         right: 0px
-        bottom: 0
+        top: 50%
+        transform: translateY(-50%)
 
 .sections-serv
     padding: 100px 0 0
@@ -198,15 +201,10 @@
         margin-bottom: 100px
         &__item
             margin-right: 24px
-            &:first-child
-                background: url(../img/services/services-img-01.jpg) center center/ cover no-repeat
+           
 
-            &:nth-child(2)
-                background: url(../img/services/services-img-02.jpg) center center/ cover no-repeat
-
-            &:last-child
-                background: url(../img/services/services-img-03.jpg) center center/ cover no-repeat
-                margin-right: 0
+    .text-column
+        margin-bottom: 100px
 
 .objects-icon-box
     display: flex
@@ -238,3 +236,10 @@
             font-size: 20px
             font-weight: 500
             line-height: 130%
+
+.services-page
+    &__dop
+        .other-sections
+            margin: 50px 0
+            &__title
+                margin-bottom: 50px

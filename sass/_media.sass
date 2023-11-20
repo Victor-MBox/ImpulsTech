@@ -160,26 +160,15 @@
                 top: auto
                 transform: none
                 opacity: 1
-            &:first-child
-                background: url(../img/bg/bg-servise-01.jpg) center center/ cover no-repeat
-
-                &:hover
-                    background-size: cover
-                    p
-                        margin-top: -0px
-                    &::before
-                        opacity: 0
-
-            &:last-child
-                background: url(../img/bg/bg-servise-02.jpg) center center/ cover no-repeat
-
-                &:hover
-                    background-size: cover
-                    p
-                        margin-top: -0px
-                    &::before
-                        opacity: 0
-
+            
+            &:hover
+                p
+                    margin-top: -0px
+                &::before
+                    opacity: 0
+                img
+                    top: 0
+            
     .about-section
         &__column
             &:first-child
@@ -244,6 +233,9 @@
         &__slide-img
             position: relative
             order: -1
+            top: auto
+            transform: none
+            margin-bottom: 50px
             img
                 width: 60%
         &__slide-title
@@ -251,19 +243,7 @@
             font-size: 30px
             line-height: 32px
 
-    .services-page
-        &__dop
-            .activity
-                &__item
-                    &:nth-child(2)
-                        background: url(../img/services/services-img-02.jpg) center center/ cover no-repeat
 
-                    &:hover
-                        background-size: cover
-                        p
-                            margin-top: -0px
-                        &::before
-                            opacity: 0
         &__about-section
             padding: 50px 0
 
@@ -402,8 +382,8 @@
             margin-right: 10px
             &:nth-child(2n)
                 margin-right: 0
-                
-    .sections-serv 
+
+    .sections-serv
         .activity__item
             margin-right: 0
 
@@ -411,22 +391,21 @@
         padding: 60px 0
         .activity
             margin-bottom: 60px
-    
+
     .advantages
         padding: 40px 0 80px
 
     .examples-cart .slick-next, .examples-cart .slick-prev
         top: 50%
 
-    .slider-reviews-section 
+    .slider-reviews-section
         .container
-            .slick-initialized 
+            .slick-initialized
                 .slick-slide
                     flex-wrap: wrap
             .arrows-left, .arrows-right
                 top: 102%
                 transform: none
-
 
     .slider-reviews
         padding: 10px
@@ -509,4 +488,3 @@
             width: 100%
             &:nth-child(1n)
                 margin-right: 0
-                
