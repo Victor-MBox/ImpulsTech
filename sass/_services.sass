@@ -14,6 +14,11 @@
     &__container
     &__title
         margin-bottom: 50px
+    &__slide-text
+        width: 60%
+        font-size: 20px
+        font-weight: 400
+        line-height: 150%
 
 /* Вторая секция */
 .advantages
@@ -201,7 +206,6 @@
         margin-bottom: 100px
         &__item
             margin-right: 24px
-           
 
     .text-column
         margin-bottom: 100px
@@ -243,3 +247,53 @@
             margin: 50px 0
             &__title
                 margin-bottom: 50px
+
+.what-we-supply
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 100px
+    &__item
+        width: 33%
+        height: 240px
+        border-radius: 4px
+        background: $gray-btn
+        padding: 20px 20px 30px 20px
+        margin-right: 24px
+        &:last-child
+            margin-right: 0
+        img
+            width: 100px
+            height: auto
+            margin-bottom: 20px
+        p
+            color: $black-1
+            font-size: 20px
+            font-weight: 400
+            line-height: 120%
+
+    &_mod
+        .what-we-supply__item
+            width: 34%
+            &:first-child
+                background: none
+                padding: 0
+                width: 29%
+
+.our-suppliers
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__item
+        width: 33%
+        height: 200px
+        border-radius: 4px
+        border: 1px solid #E6E6E5
+        background: #FFF
+
+        display: flex
+        align-items: center
+        justify-content: center
+
+        padding: 20px
+        margin-right: 24px
