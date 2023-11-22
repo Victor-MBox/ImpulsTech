@@ -235,5 +235,19 @@ button, a
         background: $main-red
         margin-bottom: 8px
         border-radius: 8px
+
+        transition: .3s
         &:last-child
             margin-bottom: 0
+
+    &_active
+        span
+            margin-bottom: -1px
+            &:nth-child(1)
+                transform: rotate(45deg)
+            &:nth-child(2)
+                width: 0
+                height: 0
+            &:nth-child(3)
+                transform: rotate(-45deg)
+                

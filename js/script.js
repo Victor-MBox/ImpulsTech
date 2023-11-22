@@ -70,47 +70,47 @@ function removeActiveClasses() {
 
 /* //! Модальные окна */
 // Объявляем переменные в глобальной области видимости, чтобы они были доступны в других функциях
-var modalWrapper = document.querySelector('.modal');
-var modalMain = document.querySelector('.modal__main');
-var bntCloseMainModal = document.querySelector('[data-modal="closeMainModal"]');
+var modalWrapper = document.querySelector('.modal')
+var modalMain = document.querySelector('.modal__main')
+var bntCloseMainModal = document.querySelector('[data-modal="closeMainModal"]')
 
 safeExecute('[data-modal="mainModal"]', function (elements) {
-    var bntMainModal = elements[0];
+	var bntMainModal = elements[0]
 
-    if (modalWrapper && modalMain && bntCloseMainModal) {
-        bntMainModal.addEventListener('click', addActiveClassesModal);
-        bntCloseMainModal.addEventListener('click', removeActiveClassesModal);
+	if (modalWrapper && modalMain && bntCloseMainModal) {
+		bntMainModal.addEventListener('click', addActiveClassesModal)
+		bntCloseMainModal.addEventListener('click', removeActiveClassesModal)
 
-        modalWrapper.addEventListener('click', function (event) {
-            if (!event.target.closest('.modal__main')) {
-                removeActiveClassesModal();
-            }
-        });
+		modalWrapper.addEventListener('click', function (event) {
+			if (!event.target.closest('.modal__main')) {
+				removeActiveClassesModal()
+			}
+		})
 
-        document.addEventListener('keydown', function (event) {
-            if (event.keyCode === 27) {
-                // 27 - код клавиши Esc
-                removeActiveClassesModal();
-            }
-        });
-    }
-});
+		document.addEventListener('keydown', function (event) {
+			if (event.keyCode === 27) {
+				// 27 - код клавиши Esc
+				removeActiveClassesModal()
+			}
+		})
+	}
+})
 
 // Добавляем модификации в функции addActiveClassesModal и removeActiveClassesModal
 function addActiveClassesModal() {
-    if (modalWrapper && modalMain) {
-        modalWrapper.classList.add('active-modal');
-        modalMain.classList.add('active-modal');
-        document.body.classList.toggle('no-scroll');
-    }
+	if (modalWrapper && modalMain) {
+		modalWrapper.classList.add('active-modal')
+		modalMain.classList.add('active-modal')
+		document.body.classList.toggle('no-scroll')
+	}
 }
 
 function removeActiveClassesModal() {
-    if (modalWrapper && modalMain) {
-        modalWrapper.classList.remove('active-modal');
-        modalMain.classList.remove('active-modal');
-        document.body.classList.remove('no-scroll');
-    }
+	if (modalWrapper && modalMain) {
+		modalWrapper.classList.remove('active-modal')
+		modalMain.classList.remove('active-modal')
+		document.body.classList.remove('no-scroll')
+	}
 }
 
 /* //! Слайдер на главной странице */
@@ -169,3 +169,39 @@ function openTab(evt, tabName) {
 		evt.currentTarget.classList.add('btn-tab_active')
 	}
 }
+
+// ! Мобильное попап меню
+const btnOpenPopupNav = document.querySelector('.burger')
+const popupNav = document.getElementById('popupStep1')
+const popupNavStep2 = document.getElementById('popupStep2')
+
+const btnCatalog = document.getElementById('mobCatalog')
+const btnComeBack = document.getElementById('comeBack')
+
+// * Шаг 1
+btnOpenPopupNav.addEventListener('click', function (event) {
+	if (document.body.classList.contains('no-scroll')) {
+		document.body.classList.remove('no-scroll')
+		popupNav.classList.remove('popup-nav_active')
+		btnOpenPopupNav.classList.remove('burger_active')
+		popupNavStep2.classList.remove('popup-nav_active')
+	} else {
+		document.body.classList.add('no-scroll')
+		popupNav.classList.add('popup-nav_active')
+		btnOpenPopupNav.classList.add('burger_active')
+		popupNavStep2.classList.remove('popup-nav_active')
+	}
+})
+
+// * Шаг 2
+btnCatalog.addEventListener('click', function (event) {
+	popupNav.classList.remove('popup-nav_active')
+	popupNavStep2.classList.add('popup-nav_active')
+
+})
+
+// * Возврат назад 
+btnComeBack.addEventListener('click', function (event) {
+	popupNav.classList.add('popup-nav_active')
+	popupNavStep2.classList.remove('popup-nav_active')
+})

@@ -50,3 +50,33 @@ if (window.jQuery) {
 		}
 	})
 }
+
+// * Слайдер в СТАТЬЯХ
+if (window.jQuery) {
+	$(document).ready(function () {
+		let articleSlider = $('#articleSlider')
+
+		if (articleSlider.length) {
+			articleSlider.slick({
+				// Ваши настройки для Slick Slider
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				dots: true,
+				speed: 500,
+				fade: false,
+				autoplay: true,
+				autoplaySpeed: 7000,
+			})
+
+			$('#articleSliderPrev').on('click', function () {
+				articleSlider.slick('slickPrev')
+			})
+
+			$('#articleSliderNext').on('click', function () {
+				articleSlider.slick('slickNext')
+			})
+		}
+	})
+}

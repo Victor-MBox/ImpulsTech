@@ -104,7 +104,7 @@
     opacity: 0
     transition: opacity 0.2s linear, visibility 0s linear 0.2s
 
-    a 
+    a
         &:hover
             color: $main-red
 
@@ -189,4 +189,59 @@
         opacity: 1
         transition: opacity 0.2s linear, visibility 0s linear 0s
 
+/* МОБИЛЬНОЕ МЕНЮ ПОПАП */
+.popup-nav
+    position: fixed
+    left: 0
+    top: 0
+    width: 100vw
+    height: 100vh
+    background: #fff
 
+    padding: 100px 25px
+
+    visibility: hidden
+    opacity: 0
+    transition: .3s
+    a, button
+        color: $black-1
+        font-size: 18px
+        font-weight: 600
+        line-height: 150%
+
+        display: flex
+        align-items: center
+        margin-bottom: 20px
+        img
+            width: 40px
+            margin-right: 10px
+        p
+            width: 100%
+            text-align: left
+            padding-right: 10px
+
+    button
+        background: none
+        border: none
+        width: 100%
+
+    &__btn-back
+        color: $black-1
+        font-size: 14px
+        font-weight: 500
+        line-height: 150%
+        opacity: .6
+        margin-bottom: 10px
+
+    &__title
+        color: $black-1
+        font-size: 18px
+        font-weight: 600
+        line-height: 150%
+        margin-bottom: 20px
+
+    &_step2
+        padding: 60px 25px
+    &_active
+        visibility: inherit
+        opacity: 1

@@ -33,6 +33,14 @@
             .arrows-right
                 right: 20px
 
+    /* БЛОГ */
+
+    .article-content__item
+        .arrows-right
+            right: 10px
+        .arrows-left
+            left: 10px
+
 @media (max-width: 1200px)
     .header
         &__container
@@ -111,6 +119,10 @@
             display: flex
             align-items: center
             justify-content: space-between
+
+            z-index: 2
+            position: relative
+            border-bottom: 1px solid #8f8f8f
         &__logo
             a
                 img
@@ -299,6 +311,12 @@
                 margin-right: 14px
             &:nth-child(3n)
                 margin-right: 0
+
+    /* ВИДЕО */
+    .video-block
+        .article
+            &__item-video
+                margin-right: 14px
 
 @media (max-width: 768px)
     .main-slider
@@ -533,12 +551,29 @@
                 margin-right: 14px
             &:nth-child(2n)
                 margin-right: 0
-                
+
         &__title
             font-size: 15px
         &__text
             font-size: 14px
-                
+
+    /* БЛОГ */
+    .article-content
+        &__item
+            p
+                font-size: 16px
+        &__title
+            font-size: 22px
+
+    .article-services, .other-articles
+        padding: 20px 0
+
+    /* ВИДЕО */
+    .video-block
+        .article
+            &__item-video
+                width: 100%
+                margin-right: 0
 
 @media (max-width: 480px)
     .header__buttons a, .header__buttons .header__btn-search
