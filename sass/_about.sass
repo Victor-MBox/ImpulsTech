@@ -3,7 +3,7 @@
         &__slide-title
             margin-bottom: 20px
         &__slide-img
-            right: 50px 
+            right: 50px
 
     .sections-serv
         margin-bottom: 100px
@@ -14,3 +14,101 @@
         &__title
             display: flex
             justify-content: space-between
+    .advantages
+        padding: 70px 0 100px
+    .slider-reviews-section
+        &__title
+            margin-bottom: 50px
+
+.our-partners
+    padding: 50px 0
+    &__title
+        margin-bottom: 50px
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+    &__item
+        width: 16%
+        padding: 10px 20px
+        opacity: .5
+
+.certificates
+    padding: 100px 0 0
+    .container
+        display: flex
+    &__title
+        margin-bottom: 50px
+    &__item
+        margin-right: 24px
+        img
+            margin-bottom: 20px
+        p
+            color: #666
+            font-size: 18px
+            font-weight: 400
+            line-height: 130%
+
+/* Выполненные проекты */
+.projects-page
+    .examples
+        padding: 50px 0
+
+/* Контакты */
+.contacts-page
+    .feedback-section
+        background: none
+.map-icon
+    display: flex
+    img
+        margin-right: 10px
+    p
+        color: #000
+        font-size: 18px
+        font-weight: 400
+        line-height: 150%
+
+/* БЛОГ */
+.blog-page
+    .feedback-section
+        padding: 50px 0
+        background: url(../img/bg/bg-feedback-section-mail.jpg) center center/cover no-repeat
+    .feedback__column
+        &:first-child
+            padding-right: 60px
+.blog
+    padding: 100px 0
+    &__title
+        margin-bottom: 50px
+
+.all-post
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+        width: 24%
+        margin-bottom: 30px
+        margin-right: 14px
+        &:nth-child(4n)
+            margin-right: 0
+
+        img
+            border-radius: 4px
+            margin-bottom: 15px
+        &:hover
+            .all-post__title
+                color: $main-red
+
+    &__title
+        color: $black-1
+        font-size: 16px
+        font-weight: 600
+        line-height: 120%
+        margin-bottom: 8px
+        transition: .3s
+    &__text
+        color: $gray-article-text
+        font-size: 15px
+        font-weight: 400
+        line-height: 125%

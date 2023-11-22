@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="image/x-icon" href="img/favicon.png" rel="icon">
+    <title>Блог - ИмпульсТех</title>
+</head>
+
+<body class="blog-page">
+
+    <header class="header">
+        <div class="header__container">
+
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="img/icons/logo.svg" alt="">
+                </a>
+            </div>
+
+            <div class="header__nav-menu">
+                <ul class="nav-menu">
+
+                    <li class="nav-menu__catalog">
+                        <button class="catalog" id="catalog">
+                            <div class="band">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            Каталог
+                        </button>
+                    </li>
+
+                    <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu__container">
+                            <div class="mega-menu__column">
+                                <img src="img/menu/menu-1.png" alt="">
+                                <a class="mega-menu__title" href="#">Токоотводы и аксессуары</a>
+                                <a class="mega-menu__link" href="#">Круглый проводник</a>
+                                <a class="mega-menu__link" href="#">Плоский проводник</a>
+                                <a class="mega-menu__link" href="#">Держатели токоотводов</a>
+                                <a class="mega-menu__link" href="#">Соединители токоотводов</a>
+                            </div>
+
+                            <div class="mega-menu__column">
+                                <img src="img/menu/menu-2.png" alt="">
+                                <a class="mega-menu__title" href="#">Молниеприёмники и молниеприёмные мачты</a>
+                                <a class="mega-menu__link" href="#">Стержневые молниеприемники</a>
+                                <a class="mega-menu__link" href="#">Молниеприемники на бетонных основаниях</a>
+                                <a class="mega-menu__link" href="#">Элементы крепления молниеприемников</a>
+                            </div>
+
+                            <div class="mega-menu__column">
+                                <img src="img/menu/menu-3.png" alt="">
+                                <a class="mega-menu__title" href="#">Заземление</a>
+                                <a class="mega-menu__link" href="#">Составные электроды</a>
+                                <a class="mega-menu__link" href="#">Соединители и наконечники для электродов</a>
+                                <a class="mega-menu__link" href="#">Инструмент и аксессуары</a>
+                            </div>
+
+                            <div class="mega-menu__column">
+                                <img src="img/menu/menu-4.png" alt="">
+                                <a class="mega-menu__title" href="#">Устройства защиты от импульсных перенапряжений
+                                    (УЗИП), НПЦ «Грозозащита»</a>
+                                <a class="mega-menu__link" href="#">1 класс защиты (по питанию)</a>
+                                <a class="mega-menu__link" href="#">2 класс защиты (по питанию)</a>
+                                <a class="mega-menu__link" href="#">3 класс защиты (по питанию)</a>
+                                <a class="mega-menu__link" href="#">Телекоммуникационные УЗИП</a>
+                                <a class="mega-menu__link" href="#">УЗИП специального назначения</a>
+                                <a class="mega-menu__link" href="#">Приборы для тестирования</a>
+
+                            </div>
+
+                            <div class="mega-menu__column">
+                                <img src="img/menu/menu-5.png" alt="">
+                                <a class="mega-menu__title" href="#">Устройства защиты от импульсных перенапряжений
+                                    (УЗИП), DEHN</a>
+                                <a class="mega-menu__link" href="#">1 класс защиты (по питанию)</a>
+                                <a class="mega-menu__link" href="#">2 класс защиты (по питанию)</a>
+                                <a class="mega-menu__link" href="#">3 класс защиты (по питанию)</a>
+                                <a class="mega-menu__link" href="#">УЗИП для слаботочных систем</a>
+                                <a class="mega-menu__link" href="#">Комбинированные УЗИП</a>
+
+                            </div>
+
+                            <div class="mega-menu__column">
+                                <img src="img/menu/menu-6.png" alt="">
+                                <a class="mega-menu__title" href="#">Изолированная молниезащита</a>
+                                <a class="mega-menu__link" href="#">Опорные трубостойки с молниеприемником</a>
+                                <a class="mega-menu__link" href="#">Держатели токоотводов</a>
+                                <a class="mega-menu__link" href="#">Треноги и штативы</a>
+                                <a class="mega-menu__link" href="#">Треноги и штативы</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <li class="nav-menu__item"><a href="about.html">О компании</a></li>
+                    <li class="nav-menu__item"><a href="#">Статьи</a></li>
+                    <li class="nav-menu__item"><a href="#">Видео</a></li>
+                    <li class="nav-menu__item"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="header__search">
+                <button class="search" id="searchBtn">
+                    <img src="img/icons/icon-search.svg" alt="">
+                    Поиск по сайту
+                </button>
+            </div>
+
+            <div class="header__buttons">
+                <a class="call-btn" href="tel:+74956633573">
+                    <img src="img/icons/icon-call.svg" alt="">
+                    +7(495) 663-35-73
+                </a>
+
+                <button class="btn" data-modal="mainModal">
+                    Заказать звонок
+                </button>
+            </div>
+
+        </div>
+        <div class="header__mob-v mob-v">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="img/icons/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header__buttons">
+
+                <a class="link-tel link-tel_mob" href="#"></a>
+                <a class="link-telegram link-telegram_mob" href="#"></a>
+                <a class="link-whatsapp link-whatsapp_mob" href="#"></a>
+
+                <div class="header__btn-search">
+                    <button class="search" id="searchBtnMob">
+                        <img src="img/icons/icon-search.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="header__burger">
+                    <button class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-window" id="searchWindow">
+        <div class="search-window__wrapper">
+            <form action="#" method="GET">
+                <input type="text" name="query" placeholder="Что ищем" />
+                <button class="main-btn" type="submit">Найти</button>
+            </form>
+            <button class="search-window__close close-btn">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="page">
+
+        <!-- Третья секция -->
+        <div class="blog">
+            <div class="blog__container container">
+                <div class="blog__title title">
+                    Статьи
+                </div>
+
+                <div class="blog__wrapper all-post">
+                    <a class="all-post__item">
+                        <img src="img/blog/post-01.jpg" alt="">
+                        <div class="all-post__title">Грозозащита Ethernet для IP- видеонаблюдения</div>
+                        <div class="all-post__text">Система IP-видеонаблюдения - это совокупность сложных
+                            высокотехнологичных устройств с чувствительной электроникой. Эти...</div>
+                    </a>
+
+                    <a class="all-post__item">
+                        <img src="img/blog/post-02.jpg" alt="">
+                        <div class="all-post__title">Выбор УЗИП. Оценка токов молнии</div>
+                        <div class="all-post__text">Специалисту по молниезащите трудно представить, как
+                            можно рассчитать грозовые перенапряжения и выбрать...</div>
+                    </a>
+
+                    <a class="all-post__item">
+                        <img src="img/blog/post-03.jpg" alt="">
+                        <div class="all-post__title">Заземление молниеотводов</div>
+                        <div class="all-post__text">Количество статей о заземлении молниеотводов трудно под-
+                            считать. Заземляющее устройство – необходимый элемент...</div>
+                    </a>
+
+                    <a class="all-post__item">
+                        <img src="img/blog/post-04.jpg" alt="">
+                        <div class="all-post__title">Активные молниеотводы –
+                            реальная помеха молниезащите</div>
+                        <div class="all-post__text">В России, как и в других технически развитых странах, есть
+                            немало известных специалистов в области атмосферного...</div>
+                    </a>
+
+                    <a class="all-post__item">
+                        <img src="img/blog/post-04.jpg" alt="">
+                        <div class="all-post__title">Активные молниеотводы –
+                            реальная помеха молниезащите</div>
+                        <div class="all-post__text">В России, как и в других технически развитых странах, есть
+                            немало известных специалистов в области атмосферного...</div>
+                    </a>
+
+                    <a class="all-post__item">
+                        <img src="img/blog/post-03.jpg" alt="">
+                        <div class="all-post__title">Заземление молниеотводов</div>
+                        <div class="all-post__text">Количество статей о заземлении молниеотводов трудно под-
+                            считать. Заземляющее устройство – необходимый элемент...</div>
+                    </a>
+
+                    <a class="all-post__item">
+                        <img src="img/blog/post-02.jpg" alt="">
+                        <div class="all-post__title">Выбор УЗИП. Оценка токов молнии</div>
+                        <div class="all-post__text">Специалисту по молниезащите трудно представить, как
+                            можно рассчитать грозовые перенапряжения и выбрать...</div>
+                    </a>
+
+                    <a class="all-post__item">
+                        <img src="img/blog/post-01.jpg" alt="">
+                        <div class="all-post__title">Грозозащита Ethernet для IP- видеонаблюдения</div>
+                        <div class="all-post__text">Система IP-видеонаблюдения - это совокупность сложных
+                            высокотехнологичных устройств с
+                            чувствительной электроникой. Эти...</div>
+                    </a>
+
+                    <a class="all-post__item">
+                        <img src="img/blog/post-01.jpg" alt="">
+                        <div class="all-post__title">Грозозащита Ethernet для IP- видеонаблюдения</div>
+                        <div class="all-post__text">Система IP-видеонаблюдения - это совокупность сложных
+                            высокотехнологичных устройств с
+                            чувствительной электроникой. Эти...</div>
+                    </a>
+
+                    <a class="all-post__item">
+                        <img src="img/blog/post-02.jpg" alt="">
+                        <div class="all-post__title">Выбор УЗИП. Оценка токов молнии</div>
+                        <div class="all-post__text">Специалисту по молниезащите трудно представить, как
+                            можно рассчитать грозовые перенапряжения и выбрать...</div>
+                    </a>
+
+                    <a class="all-post__item">
+                        <img src="img/blog/post-03.jpg" alt="">
+                        <div class="all-post__title">Заземление молниеотводов</div>
+                        <div class="all-post__text">Количество статей о заземлении молниеотводов трудно под-
+                            считать. Заземляющее устройство – необходимый элемент...</div>
+                    </a>
+
+                    <a class="all-post__item">
+                        <img src="img/blog/post-04.jpg" alt="">
+                        <div class="all-post__title">Активные молниеотводы –
+                            реальная помеха молниезащите</div>
+                        <div class="all-post__text">В России, как и в других технически развитых странах, есть
+                            немало известных специалистов в области атмосферного...</div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Обратная связь -->
+        <section class="feedback-section">
+            <div class="feedback-section__container container">
+                <div class="feedback-section__feedback feedback">
+                    <div class="feedback__column">
+                        <div class="feedback__title title">
+                            Подпишитесь на рассылку
+                        </div>
+
+                        <div class="feedback__text">
+                            Раз в неделю, только самое интересное по теме, без спама
+                        </div>
+                        
+                    </div>
+
+                    <div class="feedback__column">
+
+                        <div class="feedback__form">
+
+                            <form action="#" class="form" id="form">
+
+                                <input type="hidden" name="form_name" value="Подписаться на рассылку">
+
+                                <div class="form__input mail-input">
+                                    <input type="mail" name="mail" placeholder="Электронная почта" class="input">
+                                </div>
+
+
+                                <div class="form__submit">
+                                    <button type="submit" data-callback="onSubmit">
+                                        <p>Отправить запрос</p>
+                                        <span><img src="img/icons/submit.svg" alt=""></span>
+                                    </button>
+                                </div>
+
+                                <div class="form__item">
+                                    <div class="checkbox">
+                                        <label for="checkbox" class="checkbox__label">
+                                            <input id="checkbox" checked type="checkbox" name="agreement"
+                                                class="checkbox__input">
+                                            <span class="checkbox__fake"></span>
+                                            <span class="checkbox__text">Я принимаю условия <a href="/policy">соглашения
+                                                    об
+                                                    обработке</a> персональных данных</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__navigation container">
+            <div class="footer__column">
+                <a href="#"><img src="img/icons/logo-gray.svg" alt=""></a>
+                <a class="footer__link-contact" href="tel:+7(495) 663-35-73">+7(495) 663-35-73</a>
+                <a class="footer__link-contact" href="#">Telegram</a>
+                <a class="footer__link-contact" href="#">WhatsApp</a>
+                <a class="footer__link-contact" href="mailto:info@molnia.guru">info@molnia.guru</a>
+                <p>г. Москва, БЦ «Хамелеон», Рязанский проспект, д.10, стр.18, оф. 2.13</p>
+
+            </div>
+
+            <div class="footer__column">
+                <a class="footer__nav-link" href="#">Каталог →</a>
+                <a class="footer__link" href="#">Токоотводы и аксессуары</a>
+                <a class="footer__link" href="#">Молниеприёмники и молниеприёмные мачты</a>
+                <a class="footer__link" href="#">Заземление</a>
+                <a class="footer__link" href="#">Устройства защиты от импульсных перенапряжений (УЗИП), НПЦ
+                    «Грозозащита»</a>
+                <a class="footer__link" href="#">Устройства защиты от импульсных перенапряжений (УЗИП), DEHN</a>
+                <a class="footer__link" href="#">Изолированная молниезащита</a>
+            </div>
+
+            <div class="footer__column">
+                <a class="footer__nav-link" href="#">Наша Деятельность →</a>
+                <a class="footer__link" href="#">Проектирование</a>
+                <a class="footer__link" href="#">Поставка оборудования и материалов</a>
+            </div>
+
+            <div class="footer__column">
+                <a class="footer__nav-link" href="#">Сайт</a>
+                <a class="footer__link" href="#">О компании</a>
+                <a class="footer__link" href="#">Выполненные проекты</a>
+                <a class="footer__link" href="#">Статьи</a>
+                <a class="footer__link" href="#">Видео</a>
+                <a class="footer__link" href="#">Контакты</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer__copyright container">
+            <p>© 2023 ООО «Импульс тех»</p>
+            <p><a href="#">Соглашение об обработке</a> персональных данных</p>
+        </div>
+    </footer>
+
+    <!-- //! Модальные окна -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <!-- //* Main modal -->
+        <div class="modal__main">
+            <div class="modal__title">Заказать обратный звонок</div>
+
+            <button class="modal__close close-btn close-btn_abs" data-modal="closeMainModal">
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="modal__form">
+
+                <form action="#" class="form" id="form-modal">
+
+                    <input type="hidden" name="form_name" value="Общая на Главной странице">
+
+                    <div class="form__input">
+                        <input type="text" name="name" placeholder="Имя" class="input">
+                    </div>
+
+                    <div class="form__input phone-input">
+                        <input type="phone" name="phone" placeholder="Номер телефона" class="input">
+                    </div>
+
+                    <div class="form__input phone-input">
+                        <textarea rows="4" name="texterea" placeholder="Краткое описание вопроса"></textarea>
+                    </div>
+
+                    <div class="form__submit">
+                        <button type="submit" data-callback="onSubmit">
+                            <p>Отправить запрос</p>
+                            <span><img src="img/icons/submit.svg" alt=""></span>
+                        </button>
+                    </div>
+
+                    <div class="form__item">
+                        <div class="checkbox2">
+                            <label for="checkbox2" class="checkbox2__label">
+                                <input id="checkbox2" checked type="checkbox" name="agreement" class="checkbox2__input">
+                                <span class="checkbox2__fake"></span>
+                                <span class="checkbox2__text">Я принимаю условия <a href="/policy">соглашения об
+                                        обработке</a> персональных данных</span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Скрипты -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

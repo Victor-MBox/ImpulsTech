@@ -88,6 +88,17 @@
         &__title
             font-size: 30px
 
+    /* Страница О КОМПАНИИ */
+    .page-preview
+        &__slide-text
+            width: 50%
+            font-size: 18px
+
+    /* BLOG */
+    .all-post
+        &__item
+            width: 23%
+
 @media (max-width: 1024px)
     .mob-v
         display: block
@@ -256,6 +267,38 @@
             font-size: 18px
         img
             width: 70px
+
+    /* Страница О КОМПАНИИ */
+    .page-preview
+        &__slide-text
+            width: 100%
+
+    .about-page
+        .page-preview
+            &__slide-img
+                right: auto
+        .advantages
+            padding: 30px 0
+
+    .objects-icon-box
+        flex-wrap: wrap
+        &__item
+            width: 48%
+            margin-bottom: 24px
+            &:nth-child(2n)
+                margin-right: 0
+
+    /* BLOG */
+    .blog
+        padding: 50px 0
+
+    .all-post
+        &__item
+            width: 32%
+            &:nth-child(4n)
+                margin-right: 14px
+            &:nth-child(3n)
+                margin-right: 0
 
 @media (max-width: 768px)
     .main-slider
@@ -442,7 +485,6 @@
             img
                 width: 40%
 
-
     .what-we-supply
         &_mod
             .what-we-supply__item
@@ -450,6 +492,53 @@
                 &:first-child
                     width: 100%
 
+    /* Страница О КОМПАНИИ */
+    .about-page
+        .page-preview
+            &__slide
+                min-height: auto
+                height: auto
+            &__slide-text
+                font-size: 16px
+
+        .sections-serv
+            margin-bottom: 50px
+        .examples__title, .examples__title a
+            display: block
+
+    .objects-icon-box
+        &__item
+            height: 230px
+
+    .our-partners
+        &__item
+            width: 33%
+
+    .certificates
+        .container
+            display: block
+        &__item
+            margin-right: 0
+            margin-bottom: 20px
+            img
+                margin: 0 auto 20px
+            p
+                text-align: center
+
+    /* BLOG */
+    .all-post
+        &__item
+            width: 48%
+            &:nth-child(3n)
+                margin-right: 14px
+            &:nth-child(2n)
+                margin-right: 0
+                
+        &__title
+            font-size: 15px
+        &__text
+            font-size: 14px
+                
 
 @media (max-width: 480px)
     .header__buttons a, .header__buttons .header__btn-search
@@ -475,6 +564,22 @@
     .page-preview
         &__slide
             padding: 20px
+
+    /* Страница О КОМПАНИИ */
+    .about-page
+        .objects-icon-box
+            p
+                font-size: 14px
+
+    /* BLOG */
+    .all-post
+        &__item
+            width: 100%
+            margin-right: 0
+            &:nth-child(3n)
+                margin-right: 0
+            &:nth-child(2n)
+                margin-right: 0
 
 @media (max-width: 380px)
     .link-tel::before, .link-telegram::before, .link-mail::before, .link-whatsapp::before, .header .search img

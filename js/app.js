@@ -1,7 +1,7 @@
 // * Слайдер на странице - Наша деятельность
 $(document).ready(function () {
 	// Цикл для инициализации каждого слайдера
-	for (var i = 1; i <= 6; i++) {
+	for (var i = 1; i <= 9; i++) {
 		let sliderId = '#examplesCartSlider' + i
 		let slider = $(sliderId)
 
